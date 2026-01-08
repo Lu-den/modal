@@ -1,0 +1,100 @@
+.setContent{
+ border: 2px solid rgba(227, 227, 227, 0.474);
+ border-radius: 20px;
+ width: 40%;
+ height: 60vh;
+ font-family: Roboto;
+}
+h1{
+  font-size: 35px;
+  margin-left: 11px;
+}
+.optionTextP{
+    color: rgba(0, 0, 0, 0.581);
+    font-size: 18px;
+    margin-left: 11px;
+    margin-top: -10px;
+}
+.container {
+  position: relative;
+  width: 360px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.setOptions{
+    border-bottom: 2px solid rgba(209, 209, 209, 0.441);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: -25px;
+    width: 203%;
+}
+.options {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  border-radius: 10px;
+}
+.options label {
+  font-size: 17px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.highlight {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  width: 37%;
+  height: 4px;
+  background: #2552fe;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+.fa-phone{
+  position: relative;
+  left: 8px;
+  top: -3px;
+}
+.fa-envelope{
+   position: relative;
+   left: 8px;
+   top: -2px;
+}
+.fa-comment-dots{
+   position: relative;
+   left: 8px;
+   top: -2px; 
+}
+/* LINEA */
+#tab1:checked ~ .highlight { transform: translateX(0%); }
+#tab2:checked ~ .highlight { transform: translateX(100%); }
+#tab3:checked ~ .highlight { transform: translateX(200%); }
+/*LETRAS*/
+#tab1:checked ~ .setOptions label[for="tab1"] { color: #2552fe; }
+#tab2:checked ~ .setOptions label[for="tab2"] { color: #2552fe; }
+#tab3:checked ~ .setOptions label[for="tab3"] { color: #2552fe; }
+
+#tab1:checked ~ .setOptions i[for="icon1"] { color: #2552fe; }
+#tab2:checked ~ .setOptions i[for="icon2"] { color: #2552fe; }
+#tab3:checked ~ .setOptions i[for="icon3"] { color: #2552fe; }
+/*CAMBIAR SOLO EN WHATSAPP*/
+#tab3:checked ~ .highlight {
+    left: 75px;
+    width: 31%;
+}
+/*CAMBIAR SOLO EN CORREO*/
+#tab2:checked ~ .highlight {
+  left: 27px;
+  width: 37%;
+}
+
+li{ 
+ List-style-type: none  
+}
+.menu{
+    border: 1px solid red;
+}
+.textMenu{
+    border: 1px solid blue;
+}
