@@ -1,6 +1,6 @@
-const dateSelect = document.querySelector(".pDate");
+const dateSelect = document.querySelector(".btn-menu2");
 dateSelect.addEventListener("click", function () {
-  if ("") {
+  if (document.getElementById("ListDateContact1").classList.contains("hide")) {
     document.getElementById("ListDateContact1").classList.remove("hide");
     document.getElementById("ListDateContact1").classList.add("show");
   }

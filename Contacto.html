@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,14 +22,14 @@
           Recibir llamada
           <input type="radio" name="tab" id="tab1" checked />
         </label>
-        <i class="fa-solid fa-envelope"></i>
-        <label class="optionLabel2" for="labelOpt2" onclick="toggleChecks(2)"
-          >Enviar correo
+        <label class="optionLabel2" for="labelOpt2" onclick="toggleChecks(2)">
+          <i class="fa-solid fa-envelope"></i>
+          Enviar correo
           <input type="radio" name="tab" id="tab2" />
         </label>
-        <i class="fa-solid fa-comment-dots"></i>
-        <label class="optionLabel3" for="labelOpt3" onclick="toggleChecks(3)"
-          >WhatsApp
+        <label class="optionLabel3" for="labelOpt3" onclick="toggleChecks(3)">
+          <i class="fa-solid fa-comment-dots"></i>
+          WhatsApp
           <input type="radio" name="tab" id="tab3" />
         </label>
         <!-- Highlight
@@ -55,10 +55,13 @@
           <p class="question2">Elige una fecha</p>
           <p class="question3">Horario preferido</p>
           <button type="button" class="btn-menu1" id="toggleBtn1">
-            <i id="chevronIcon1" class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <button type="button" class="btn-menu1Close" id="toggleBtnc">
+            <i class="fa-solid fa-caret-up"></i>
           </button>
           <button type="button" class="btn-menu2" id="toggleBtn2">
-            <i id="chevronIcon2" class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-caret-down"></i>
           </button>
           <p class="pDate"><i class="fa-solid fa-calendar"></i>Fecha</p>
           <p class="pHour"><i class="fa-solid fa-clock"></i>Horario</p>
@@ -68,7 +71,7 @@
             <label class="listDate" for="tabMenu1">Lunes a Viernes</label>
             <label class="listDate" for="tabMenu1">Sabados y Domingos</label>
           </div>
-          <div id="ListTimeContact2" class="menuTimeLeft hidden">
+          <div id="ListTimeContact2" class="menuTimeLeft hide">
             <label class="listHour" for="tabMenu2">Por la mañana</label>
             <label class="listHour" for="tabMenu2">Por la tarde</label>
           </div>
@@ -164,6 +167,6 @@
       </div>
     </div>
     <!-- <script src="Venta.js"></script> -->
-    <script src="Venta-2.js"></script>
+    <script src="Venta.js"></script>
   </body>
 </html>

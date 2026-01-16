@@ -5,7 +5,7 @@
 .optionLabel1,
 .optionLabel2,
 .optionLabel3 {
-  padding: 0 0 9px 0;
+  padding: 0 0 7px 0;
 }
 /* 4. MODAL BODY */
 /* 5. MODAL FOOTER */
@@ -22,12 +22,12 @@
   color: #292929;
 }
 .setOptions {
-  border-bottom: 3px solid rgba(131, 131, 131, 0.24);
+  border-bottom: 3px solid rgba(131, 131, 131, 0.219);
   padding-bottom: 7px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin-top: -22px;
-  width: 91vh;
+  width: 79vh;
 }
 h1 {
   font-size: 35px;
@@ -244,7 +244,8 @@ input::placeholder {
   display: none;
 }
 .btn-menu1,
-.btn-menu2 {
+.btn-menu2,
+.btn-menu1Close {
   border: none;
   background: none;
   position: relative;
