@@ -1,3 +1,17 @@
+/* 0. OVERLAY */
+/* 1. MODAL WINDOW */
+/* 2. MODAL HEADER */
+/* 3. MODAL NAVS / LABELS */
+.optionLabel1,
+.optionLabel2,
+.optionLabel3 {
+  padding: 0 0 9px 0;
+}
+/* 4. MODAL BODY */
+/* 5. MODAL FOOTER */
+/* 6. STATES */
+/* 7. MEDIA QUERY - SMARTPHONE */
+
 .setContent {
   border: 2px solid rgba(206, 69, 69, 0.973);
   border-radius: 20px;
@@ -300,4 +314,8 @@ input::placeholder {
 }
 .textMenu.active .arrow {
   transform: rotate(180deg); /* flecha hacia abajo */
+}
+
+@media (condicion) {
+  /* 0. OVERLAY */
 }
