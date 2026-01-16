@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="setContent">
+      <div class="setOptions">
+        <h1>Contactar a ventas</h1>
+          <p class="optionTextP">
+            Selecciona como prefieres que nos comuniquemos contigo.
+          </p>
+          <i class="fa-solid fa-phone" for="icon1"></i>
+          <label class="optionLabel1" for="labelOpt1" onclick="toggleChecks(event)">Recibir llamada
+            <input  type="radio" name="tab" id="tab1" checked />
+            
+          </label>
+          <i class="fa-solid fa-envelope" for="icon2"></i>
+          <label class="optionLabel2" for="labelOpt2" onclick="toggleChecks(event)">Enviar correo
+            <input type="radio" name="tab" id="tab2" />
+          </label>
+          <i class="fa-solid fa-comment-dots" for="icon3"></i>
+          <label class="optionLabel3" for="labelOpt3" onclick="toggleChecks(event)">WhatsApp
+            <input type="radio" name="tab" id="tab3" />
+          </label>
+        <!-- Highlight -->
+        <div class="highlight"></div>
+      </div>
+      <div class="services show" id="idcall">
+        <p class="question1">¿Qué servicio le interesa?</p>
+        <div class="menu">
+          <div class="setList">
+            <label class="list1">Pólizas</label>
+            <label class="list1">Telefonía VoIP</label>
+            <label class="list1">Digitalización</label>
+            <label class="list1">Videovigilancia</label>
+            <label class="list3">Desarrollo de software</label>
+            <label class="list3">Desarrollo de sitios web</label>
+            <label class="list2">Marketing y diseño</label>
+            <label class="list3">Cableado estructurado</label>
+            <label class="list1">Arrendamiento</label>
+            <label class="list3">Recuperación de datos</label>
+          </div>
+        </div>
+        <div class="setDate">
+          <p class="question2">Elige una fecha</p>
+          <p class="question3">Horario preferido</p>
+          <button type="button" class="btn-menu1" id="toggleBtn1">
+            <i id="chevronIcon1" class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button type="button"  class="btn-menu2" id="toggleBtn2">
+           <i id="chevronIcon2" class="fa-solid fa-chevron-down"></i>
+         </button>
+          <p class="pDate"><i class="fa-solid fa-calendar"></i>Fecha</p>
+          <p class="pHour"><i class="fa-solid fa-clock"></i>Horario</p>
+        </div>
+        <div class="setListDH">
+          <div id="ListDateContact1" class="menuDateRight hidden">
+              <label class="listDate" for="tabMenu1">Lunes a Viernes</label>
+              <label class="listDate" for="tabMenu1">Sabados y Domingos</label>
+          </div>
+          <div id="ListTimeContact2" class="menuTimeLeft hidden">
+              <label class="listHour" for="tabMenu2">Por la mañana</label>
+              <label class="listHour" for="tabMenu2">Por la tarde</label>
+          </div>
+        </div>
+        <div class="setNumber">
+        <p class="inputTextTel">Numero de teléfono</p>
+        <div><i class="fa-solid fa-phone-volume"></i></div>
+        <input class="inputTel" type="tel" placeholder="(55) 4336-0197" oninput="toggleIcon(this)"></input>
+        </div>
+        <div class="setContactBtn">
+        <p class="cnclTextContact">Cancelar</p>
+        <button class="btnCallContact">Solicitar Llamada<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!--form2-->
+      <div id="idCorreo" class="services hide">
+        <p class="question1">¿Qué servicio le interesa?</p>
+        <div class="menu">
+          <div class="setList">
+            <label class="list1">Pólizas</label>
+            <label class="list1">Telefonía VoIP</label>
+            <label class="list1">Digitalización</label>
+            <label class="list1">Videovigilancia</label>
+            <label class="list3">Desarrollo de software</label>
+            <label class="list3">Desarrollo de sitios web</label>
+            <label class="list2">Marketing y diseño</label>
+            <label class="list3">Cableado estructurado</label>
+            <label class="list1">Arrendamiento</label>
+            <label class="list3">Recuperación de datos</label>
+          </div>
+        </div>
+        <div class="setNumber">
+        <p class="inputTextTel">Correo electronico</p>
+        <div class="fa-envelope2"><i class="fa-solid fa-envelope"></i></div>
+        <input class="emailInput" type="email" placeholder="nombre@empresa.com" oninput="toggleIcon1(this)"></input>
+        </div>
+        <div class="setNumber">
+        <p class="inputTextTel">Mensaje</p>
+        <input class="messageInput" type="text" placeholder="¿En que podemos ayudarte hoy?" ></input>
+        </div>
+        <div class="setContactBtn">
+        <p class="cnclTextContact">Cancelar</p>
+        <button class="btnCallContact">Solicitar Llamada<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!--form3-->
+      <div id="idWhatsApp" class="services hide">
+        <p class="question1">¿Qué servicio le interesa?</p>
+        <div class="menu">
+      <div class="setList">
+            <label class="list1">Pólizas</label>
+            <label class="list1">Telefonía VoIP</label>
+            <label class="list1">Digitalización</label>
+            <label class="list1">Videovigilancia</label>
+            <label class="list3">Desarrollo de software</label>
+            <label class="list3">Desarrollo de sitios web</label>
+            <label class="list2">Marketing y diseño</label>
+            <label class="list3">Cableado estructurado</label>
+            <label class="list1">Arrendamiento</label>
+            <label class="list3">Recuperación de datos</label>
+          </div>
+        </div>
+        <p class="optionTextP2"><i class="fa-solid fa-circle-exclamation"></i>
+            Serás redirigido a WhatsApp Web en una nueva pestaña. Hemos preparado un
+            mensaje preferido con la información del servicio seleccionado para 
+            gilizar tu atención.
+          </p>
+        <div class="setContactBtn1">
+        <p class="cnclTextContact">Cancelar</p>
+        <button class="btnCallContact">Ir a WhatsApp<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+      </div>
+    </div>
+    <script src="Venta.js"></script>
+  </body>
+  </html>
