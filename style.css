@@ -1,100 +1,334 @@
-.setContent{
- border: 2px solid rgba(227, 227, 227, 0.474);
- border-radius: 20px;
- width: 40%;
- height: 60vh;
- font-family: Roboto;
+/* 0. OVERLAY */
+/* 1. MODAL WINDOW */
+/* 2. MODAL HEADER */
+/* 3. MODAL NAVS / LABELS */
+.optionLabel1,
+.optionLabel2,
+.optionLabel3 {
+  padding: 0 0 7px 0;
 }
-h1{
+/* 4. MODAL BODY */
+/* 5. MODAL FOOTER */
+/* 6. STATES */
+/* 7. MEDIA QUERY - SMARTPHONE */
+
+.setContent {
+  border: 2px solid rgba(206, 69, 69, 0.973);
+  border-radius: 20px;
+  width: 44%;
+  height: 600px;
+  font-family: Roboto;
+  font-size: 17px;
+  color: #292929;
+}
+.setOptions {
+  border-bottom: 3px solid rgba(131, 131, 131, 0.219);
+  padding-bottom: 7px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: -22px;
+  width: 79vh;
+}
+h1 {
   font-size: 35px;
+  margin-left: 9px;
+}
+.optionTextP,
+.optionTextP2 {
+  color: rgba(0, 0, 0, 0.658);
+  font-size: 18px;
   margin-left: 11px;
+  margin-top: -19px;
 }
-.optionTextP{
-    color: rgba(0, 0, 0, 0.581);
-    font-size: 18px;
-    margin-left: 11px;
-    margin-top: -10px;
+.hide {
+  display: none;
 }
-.container {
+.fa-phone {
+  position: relative;
+  left: 3px;
+  top: -1px;
+}
+.fa-envelope {
+  position: relative;
+  left: 3px;
+  top: -1px;
+}
+.fa-comment-dots {
+  position: relative;
+  left: 3px;
+  top: -1px;
+}
+/*.label {
   position: relative;
   width: 360px;
-}
-
+}*/
 input[type="radio"] {
   display: none;
 }
-.setOptions{
-    border-bottom: 2px solid rgba(209, 209, 209, 0.441);
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    margin-top: -25px;
-    width: 203%;
+
+.optionTextP2 {
+  font-size: 15px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 80%;
 }
-.options {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  border-radius: 10px;
-}
-.options label {
-  font-size: 17px;
-  margin-top: 10px;
-  cursor: pointer;
-}
+
 .highlight {
   position: absolute;
-  bottom: 0;
+  top: 124px;
   left: 16px;
   width: 37%;
   height: 4px;
-  background: #2552fe;
-  border-radius: 2px;
+  background: #0f143a;
+  border-radius: 5px;
   transition: transform 0.3s ease;
 }
-.fa-phone{
+.services .menu .setList .selected {
+  background: #0f143a;
+  color: #fff;
+}
+.menu,
+.menuDateRight,
+.menuTimeLeft {
+  width: 96.5%;
+  border: 3px solid #cccccc18;
+  background-color: rgba(216, 216, 216, 0.096);
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.menuDateRight,
+.menuTimeLeft {
+  height: 100px;
+  width: 40%;
+}
+.setList {
+  padding: 7px;
+  height: 125px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 5%;
+  gap: 5px;
+}
+.list1,
+.list2,
+.list3 {
+  font-size: 16px;
+  border-radius: 50px;
+  border: 2px solid #b8b8b89b;
+  width: 21%;
+  height: 34px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list3 {
+  width: 32%;
+  text-align: center;
+}
+.list2 {
+  width: 25%;
+}
+.setDate {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15.9%;
   position: relative;
-  left: 8px;
-  top: -3px;
+  top: -10px;
+  left: 9px;
 }
-.fa-envelope{
-   position: relative;
-   left: 8px;
-   top: -2px;
+.question3,
+.question1 {
+  position: relative;
+  left: 24%;
 }
-.fa-comment-dots{
-   position: relative;
-   left: 8px;
-   top: -2px; 
+.question1 {
+  left: 1.5%;
 }
-/* LINEA */
-#tab1:checked ~ .highlight { transform: translateX(0%); }
-#tab2:checked ~ .highlight { transform: translateX(100%); }
-#tab3:checked ~ .highlight { transform: translateX(200%); }
-/*LETRAS*/
-#tab1:checked ~ .setOptions label[for="tab1"] { color: #2552fe; }
-#tab2:checked ~ .setOptions label[for="tab2"] { color: #2552fe; }
-#tab3:checked ~ .setOptions label[for="tab3"] { color: #2552fe; }
+.pHour,
+.pDate {
+  border: 2px solid #b8b8b89b;
+  border-radius: 50px;
+  width: 40%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1%;
+}
+.setListDH {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14%;
+  margin-top: -20px;
+  position: relative;
+}
+.hide {
+  display: none;
+}
 
-#tab1:checked ~ .setOptions i[for="icon1"] { color: #2552fe; }
-#tab2:checked ~ .setOptions i[for="icon2"] { color: #2552fe; }
-#tab3:checked ~ .setOptions i[for="icon3"] { color: #2552fe; }
-/*CAMBIAR SOLO EN WHATSAPP*/
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.listDate,
+.listHour {
+  border-radius: 50px;
+  border: 2px solid #b8b8b89b;
+  width: 75%;
+  height: 35px;
+  margin: 7px 0 11px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.setNumber {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -21px;
+  left: 10px;
+}
+.inputTel,
+.emailInput,
+.messageInput {
+  border: 2px solid #b8b8b89b;
+  border-radius: 50px;
+  width: 96%;
+  height: 35px;
+  margin-top: -1%;
+}
+.messageInput {
+  height: 90px;
+}
+.setContactBtn,
+.setContactBtn1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10%;
+  position: relative;
+  top: 30px;
+  right: 10px;
+}
+.setContactBtn1 {
+  top: 85px;
+}
+.cnclTextContact {
+  margin-top: 9px;
+  font-weight: bolder;
+}
+.btnCallContact {
+  border: 2px solid #b8b8b89b;
+  background-color: #0f143a;
+  font-size: 17px;
+  color: white;
+  border-radius: 50px;
+  width: 35%;
+  height: 37px;
+}
+.setNumber .fa-phone-volume,
+.fa-envelope2 {
+  color: #242424;
+  position: absolute;
+  font-size: 17px;
+  top: 68%;
+  left: 10px;
+}
+.fa-envelope2 {
+  left: 3px;
+}
+input::placeholder {
+  padding-left: 30px;
+  color: #242424;
+}
+.fa-arrow-right,
+.fa-arrow-up-right-from-square {
+  margin-left: 8px;
+}
+.hidden {
+  display: none;
+}
+.btn-menu1,
+.btn-menu2,
+.btn-menu1Close {
+  border: none;
+  background: none;
+  position: relative;
+  right: 38%;
+  top: 41px;
+}
+.btn-menu2 {
+  left: -2px;
+}
+.fa-circle-exclamation {
+  color: #0f143a;
+}
+/* LINEA COLOR AZUL */
+#tab1:checked ~ .highlight {
+  transform: translateX(0%);
+}
+#tab2:checked ~ .highlight {
+  transform: translateX(100%);
+}
 #tab3:checked ~ .highlight {
-    left: 75px;
-    width: 31%;
+  transform: translateX(200%);
+}
+/*LETRAS COLOR AZUL*/
+#tab1:checked ~ .setOptions label[for="labelOpt1"] {
+  color: #0f143a;
+}
+#tab2:checked ~ .setOptions label[for="labelOpt2"] {
+  color: #0f143a;
+}
+#tab3:checked ~ .setOptions label[for="labelOpt3"] {
+  color: #0f143a;
+}
+
+#tab1:checked ~ .setOptions i[for="icon1"] {
+  color: #0f143a;
+}
+#tab2:checked ~ .setOptions i[for="icon2"] {
+  color: #0f143a;
+}
+#tab3:checked ~ .setOptions i[for="icon3"] {
+  color: #0f143a;
 }
 /*CAMBIAR SOLO EN CORREO*/
 #tab2:checked ~ .highlight {
   left: 27px;
   width: 37%;
 }
-
-li{ 
- List-style-type: none  
+/*CAMBIAR SOLO EN WHATSAPP*/
+#tab3:checked ~ .highlight {
+  left: 75px;
+  width: 31%;
 }
-.menu{
-    border: 1px solid red;
+#ListDateContact1:checked ~ .setListDH label[for="tabMenu1"] {
+  color: #0f143a;
 }
-.textMenu{
-    border: 1px solid blue;
+#ListDateContact1:checked ~ .setListDH label[for="tabMenu1"] {
+  color: #0f143a;
+}
+#ListTimeContact2:checked ~ .setListDH label[for="tabMenu2"] {
+  color: #0f143a;
+}
+#ListTimeContact2:checked ~ .setListDH label[for="tabMenu2"] {
+  color: #0f143a;
+}
+.arrow {
+  transition: transform 0.3s ease;
+}
+.textMenu.active .arrow {
+  transform: rotate(180deg); /* flecha hacia abajo */
 }
